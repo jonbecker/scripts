@@ -60,8 +60,8 @@ repo/
 ## `$ head -n3 PHILOSOPHY.md`
 
 ```
-1 │ No abstraction for abstraction's sake.
-2 │ Open Source - Open Standard
+- Open Source - Open Standard
+- No abstraction for abstraction's sake.
 ```
 
 <br>
