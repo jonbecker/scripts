@@ -1,9 +1,9 @@
 
 <div align="center">
 
-<img src="2022.jpg" alt="banner" width="800">
+**Scripts && configs**
 
-**Scripts, configs, and hard-won knowledge — distilled into something useful.**
+<img src="2022.jpg" alt="banner" width="800">
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
