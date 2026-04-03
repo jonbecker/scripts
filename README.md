@@ -17,9 +17,7 @@
 
 ## `$ cat /etc/motd`
 
-A personal collection of scripts, guides, and automation for Linux systems.
-Born out of the things I kept re-doing, re-Googling, or re-forgetting.
-If it saved me time twice, it lives here now.
+A personal collection of scripts, guides, and automation.
 
 <br>
 
@@ -62,9 +60,8 @@ repo/
 ## `$ head -n3 PHILOSOPHY.md`
 
 ```
-1 │ No bloat. No abstraction for abstraction's sake.
-2 │ If it needs a paragraph to explain, it needs a rewrite.
-3 │ Automate the third time you do something — not the first.
+- Open Source - Open Standard
+- No abstraction for abstraction's sake.
 ```
 
 <br>
