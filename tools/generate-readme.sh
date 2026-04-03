@@ -82,7 +82,33 @@ inject MODULES "$tmp"
         find . -not -path './.git/*' -not -path './.git' \
                -not -path './.github/*' -not -path './.github' \
                -not -name '.' -print \
-            | sed 's|^\./||' | sort | sed 's|^|  |'
+            | sed 's|^\./||' | sort | awk '
+        { lines[NR] = $0; depth[NR] = split($0, _, "/") - 1 }
+        END {
+            for (i = 1; i <= NR; i++) {
+                last = 1
+                for (j = i + 1; j <= NR; j++) {
+                    if (depth[j] <= depth[i]) {
+                        if (depth[j] == depth[i]) last = 0
+                        break
+                    }
+                }
+                is_last[i] = last
+            }
+            for (i = 1; i <= NR; i++) {
+                d = depth[i]
+                split(lines[i], p, "/")
+                prefix = ""
+                for (k = 0; k < d; k++) {
+                    if (cont[k]) prefix = prefix "│   "
+                    else         prefix = prefix "    "
+                }
+                if (is_last[i]) prefix = prefix "└── "
+                else            prefix = prefix "├── "
+                cont[d] = !is_last[i]
+                print prefix p[d + 1]
+            }
+        }'
     fi
     echo '```'
 } > "$tmp"

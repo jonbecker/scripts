@@ -26,17 +26,17 @@ A personal collection of scripts, guides, and automation.
 <!-- AUTO:TREE:START -->
 ```
 repo/
-  .claude
-  .claude/settings.local.json
-  2022.jpg
-  2022.png
-  CLAUDE.md
-  README.md
-  arch-install
-  arch-install/arch-install_cmds.sh
-  arch-install/arch-install_guide.md
-  tools
-  tools/generate-readme.sh
+├── .claude
+│   └── settings.local.json
+├── 2022.jpg
+├── 2022.png
+├── CLAUDE.md
+├── README.md
+├── arch-install
+│   ├── arch-install_cmds.sh
+│   └── arch-install_guide.md
+└── tools
+    └── generate-readme.sh
 ```
 <!-- AUTO:TREE:END -->
 
