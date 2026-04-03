@@ -60,9 +60,8 @@ repo/
 ## `$ head -n3 PHILOSOPHY.md`
 
 ```
-1 │ No bloat. No abstraction for abstraction's sake.
-2 │ If it needs a paragraph to explain, it needs a rewrite.
-3 │ Automate the third time you do something — not the first.
+1 │ No abstraction for abstraction's sake.
+2 │ Open Source - Open Standard
 ```
 
 <br>
