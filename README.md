@@ -1,7 +1,7 @@
 
 <div align="center">
 
-**Scripts && configs**
+**Scripts & configs**
 
 <img src="2022.jpg" alt="banner" width="800">
 
@@ -26,11 +26,7 @@ A personal collection of scripts, guides, and automation.
 <!-- AUTO:TREE:START -->
 ```
 repo/
-├── .claude
-│   └── settings.local.json
 ├── 2022.jpg
-├── 2022.png
-├── CLAUDE.md
 ├── README.md
 ├── arch-install
 │   ├── arch-install_cmds.sh

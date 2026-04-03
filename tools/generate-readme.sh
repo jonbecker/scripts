@@ -74,15 +74,21 @@ inject MODULES "$tmp"
 
 {
     echo '```'
-    if command -v tree &>/dev/null && tree --version &>/dev/null; then
-        tree --dirsfirst --charset utf-8 -I '.git|.github' -a . \
-            | sed '1s|.*|repo/|'
-    else
-        echo "repo/"
-        find . -not -path './.git/*' -not -path './.git' \
-               -not -path './.github/*' -not -path './.github' \
-               -not -name '.' -print \
-            | sed 's|^\./||' | sort | awk '
+    echo "repo/"
+    # only list files tracked by git, then synthesize parent dirs
+    { git ls-files | while IFS= read -r f; do
+        # emit each parent directory as its own entry
+        d=$(dirname "$f")
+        if [[ "$d" != "." ]]; then
+            IFS='/' read -ra parts <<< "$d"
+            path=""
+            for p in "${parts[@]}"; do
+                path="${path:+$path/}$p"
+                echo "$path"
+            done
+        fi
+        echo "$f"
+    done; } | sort -u | awk '
         { lines[NR] = $0; depth[NR] = split($0, _, "/") - 1 }
         END {
             for (i = 1; i <= NR; i++) {
@@ -109,7 +115,6 @@ inject MODULES "$tmp"
                 print prefix p[d + 1]
             }
         }'
-    fi
     echo '```'
 } > "$tmp"
 inject TREE "$tmp"
