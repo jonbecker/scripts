@@ -47,7 +47,7 @@ total_f=0 total_l=0
     echo '  <tr><th>Module</th><th>Description</th><th></th></tr>'
     for dir in "${modules[@]}"; do
         desc="—"
-        md=$(find "$dir" -maxdepth 1 -name '*.md' | head -1)
+        md=$(git ls-files "$dir/*.md" | head -1)
         if [[ -n "$md" ]]; then
             desc=$(awk '!/^(#|---|[[:space:]]*$)/ && NF { print; exit }' "$md")
             : "${desc:=—}"
@@ -55,8 +55,8 @@ total_f=0 total_l=0
 
         link="${md:-$dir/}"
 
-        n_files=$(find "$dir" -type f | wc -l | tr -d '[:space:]')
-        n_lines=$(find "$dir" -type f -exec cat {} + 2>/dev/null | wc -l | tr -d '[:space:]')
+        n_files=$(git ls-files "$dir" | wc -l | tr -d '[:space:]')
+        n_lines=$(git ls-files "$dir" | xargs cat 2>/dev/null | wc -l | tr -d '[:space:]')
         (( total_f += n_files )) || true
         (( total_l += n_lines )) || true
 
