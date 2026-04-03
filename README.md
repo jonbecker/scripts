@@ -17,9 +17,7 @@
 
 ## `$ cat /etc/motd`
 
-A personal collection of scripts, guides, and automation for Linux systems.
-Born out of the things I kept re-doing, re-Googling, or re-forgetting.
-If it saved me time twice, it lives here now.
+A personal collection of scripts, guides, and automation.
 
 <br>
 
