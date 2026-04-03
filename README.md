@@ -69,12 +69,9 @@ repo/
 
 <br>
 
-<div align="center">
-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ```
-       "Talk is cheap. Show me the code." — Linus Torvalds
+$ fortune
+"Talk is cheap. Show me the code." — Linus Torvalds
 ```
-
-</div>
