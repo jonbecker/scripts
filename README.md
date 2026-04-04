@@ -8,7 +8,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <!-- AUTO:STATS:START -->
-**1 module(s)** · **2 files** · **325 lines**
+**2 module(s)** · **2 files** · **325 lines**
 <!-- AUTO:STATS:END -->
 
 </div>
@@ -47,6 +47,11 @@ repo/
     <td><b><a href="arch-install/arch-install_guide.md">arch-install</a></b></td>
     <td>UEFI + LUKS2 + LVM + systemd-boot | 1TB disk, German layout, Intel CPU</td>
     <td><sub>2 files · 325 lines</sub></td>
+  </tr>
+  <tr>
+    <td><b><a href="game-build/">game-build</a></b></td>
+    <td>—</td>
+    <td><sub>0 files · 0 lines</sub></td>
   </tr>
 </table>
 <!-- AUTO:MODULES:END -->
