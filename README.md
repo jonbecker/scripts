@@ -1,4 +1,4 @@
-**Scripts & configs**
+# 5cr1p75
 
 <img src="2022.jpg" alt="banner" width="800">
 
