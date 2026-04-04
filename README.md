@@ -78,6 +78,7 @@ repo/
 ```
 - Open Source - Open Standard
 - No abstraction for abstraction's sake.
+- Consistency is more important than doing the optimal.
 ```
 
 <br>
