@@ -1,6 +1,3 @@
-
-<div align="center">
-
 **Scripts & configs**
 
 <img src="2022.jpg" alt="banner" width="800">
@@ -11,7 +8,6 @@
 **2 module(s)** · **16 files** · **3996 lines**
 <!-- AUTO:STATS:END -->
 
-</div>
 
 <br>
 
